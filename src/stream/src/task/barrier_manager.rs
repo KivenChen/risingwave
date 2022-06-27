@@ -38,8 +38,6 @@ pub const ENABLE_BARRIER_AGGREGATION: bool = false;
 #[derive(Debug)]
 pub struct CollectResult {
     pub create_mview_progress: Vec<ProstCreateMviewProgress>,
-
-    pub synced_sstables: Vec<LocalSstableInfo>,
 }
 
 enum BarrierState {
